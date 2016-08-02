@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txv_item_listview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        android:text="文件名" />
+
+    <TextView
+        android:id="@+id/txv_item_listview_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txv_item_listview_name"
+        android:textSize="14sp"
+        android:text="描述" />
+
+    <Button
+        android:id="@+id/btn_item_listview_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="播放" />
+
+    <Button
+        android:id="@+id/btn_item_listview_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="删除"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txv_item_listview_compress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txv_item_listview_content"
+        android:layout_toLeftOf="@+id/btn_item_listview_play"
+        android:text="压缩级别"
+        android:textColor="#990000" />
+
+    <TextView
+        android:id="@+id/txv_item_listview_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txv_item_listview_content"
+        android:layout_alignBottom="@+id/txv_item_listview_content"
+        android:layout_alignRight="@+id/txv_item_listview_compress"
+        android:text="TextView" />
+
+</RelativeLayout>

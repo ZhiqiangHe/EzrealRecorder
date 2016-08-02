@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_main_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择压缩级别(越往后压缩力度越大)"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_button_main0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="无压缩" />
+
+        <RadioButton
+            android:id="@+id/radio_button_main1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/radio_button_main2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" />
+        <RadioButton
+            android:id="@+id/radio_button_main3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3" />
+        <RadioButton
+            android:id="@+id/radio_button_main4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4" />
+        <RadioButton
+            android:id="@+id/radio_button_main5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_main_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始录音" />
+
+    <!--
+         <Button
+        android:id="@+id/btn_main_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止录音" />
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_margin="5dip"
+        android:background="#CCC" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txv_main_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文件列表"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_margin="5dip"
+        android:background="#CCC" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lsv_main_file_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:cacheColorHint="#00000000"
+        android:divider="#909090"
+        android:dividerHeight="0.5dip" >
+    </ListView>
+
+</LinearLayout>
